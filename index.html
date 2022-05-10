@@ -1,0 +1,167 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Zomato!</title>
+        <link rel="stylesheet"href="home.css"></link>
+    </head>
+    <body>
+        <div id="header">
+            <div id="icon">
+                <h1>ZOMATO!</h1>
+                <div id="login">
+                    <div id="old"><button>login</button></div>
+                    <div id="new"><button>signup</button></div>
+                </div>
+            </div>
+            <div id="social">
+                <a href="https.//facebook.com"target="_blank">
+                <img src="https://img.icons8.com/fluency/2x/facebook-new.png" alt="fbicon"class="slogo"/>
+            </a>
+            <a href="https.//youtube.com"target="_blank">
+                <img src="https://img.icons8.com/color/2x/youtube-play.png" alt="youtubeicon"class="slogo"/>
+            </a>
+            <a href="https.//instagram.com"target="_blank">
+                <img src="https://img.icons8.com/fluency/2x/instagram-new.png" alt="instaicon"class="slogo"/>
+            </a>
+            </div>
+        </div>
+        <div id="search">
+            <div id="logo">
+                <span>Z!</span>
+            </div>
+            <div id="heading">
+                Find the best restaurents near you
+            </div>
+            <div class="dropdown">
+               <select>
+                   <option>-----SELECT YOUR CITY-----</option>
+                   <option>Coimbatore</option>
+                   <option>Mumbai</option>
+                   <option>Chennai</option>
+               </select> 
+               <select class="restSelect">
+                <option >-----SELECT YOUR RESTAURENT-----</option>
+                <option>Hotel aaryas</option>
+                <option>Sri Annapoorana</option>
+                <option>Greenleaf</option>
+            </select> 
+            </div>
+        </div>
+        <div id="weather_location">
+            <center><button onClick="geolocation()"id="geo">
+                Geo location & Weather
+             </button>
+             <p id="out"></p>
+            </center>
+        </div>
+        <div id="quicksearch">
+        <span id="quickHeading">Quick search</span>
+        <span id="quicksubHeading">Discover restaurents by Brands</span>
+        <div id="main">
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="https://www.bing.com/th?id=OIP.EULEUO2ZRGVjW_Uz1ghwAQHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"alt="dinnerimg"/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="componentHeading"><a href="listing.html">Dominos</a></div>
+                    <div class="componentsubHeading">Dil, Dosti, Domino's!</div>
+                    
+                </div>
+            </div>
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="https://www.bing.com/th?id=OIP.Ts0XdS-iYCN0B6p0Whd_dQHaJC&w=226&h=276&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"alt="dinnerimg"/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="componentHeading"><a href="listing.html">KFC</a></div>
+                    <div class="componentsubHeading">'It's Finger Lickin' Good'</div>
+                </div>
+            </div>
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="https://www.bing.com/th?id=OIP.csPOF25Lh8pOZjUL4DLYjgHaEc&w=185&h=108&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"alt="dinnerimg"/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="componentHeading"><a href="listing.html">Subway</a></div>
+                    <div class="componentsubHeading">"Eat Fresh"</div>
+                </div>
+            </div>
+            <div class="tileContainer"> <div class="tileComponent1">
+                <img src="https://www.bing.com/th?id=OIP.l7sYnH4M0n2e0cuteFKgIgHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"alt="dinnerimg"/>
+            </div>
+            <div class="tileComponent2">
+                <div class="componentHeading"><a href="listing.html">Pizza Hut</a></div>
+                <div class="componentsubHeading"> "No one outpizzas the hut"</div>
+            </div></div>
+            <div class="tileContainer"> <div class="tileComponent1">
+                <img src="https://th.bing.com/th/id/OIP.U5Q57oKU1bFQb2DEppwYWAHaD4?w=313&h=180&c=7&r=0&o=5&pid=1.7"alt="dinnerimg"/>
+            </div>
+            <div class="tileComponent2">
+                <div class="componentHeading"><a href="listing.html">Burger King</a></div>
+                <div class="componentsubHeading">“Be Your Way,”</div>
+            </div></div>
+            <div class="tileContainer"> <div class="tileComponent1">
+                <img src="https://www.bing.com/th?id=OIP.V29o_4GLZlngVFGcIF4vkAHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"alt="dinnerimg"/>
+            </div>
+            <div class="tileComponent2">
+                <div class="componentHeading"><a href="listing.html">McDonald's</a></div>
+                <div class="componentsubHeading">i'm lovin it</div>
+            </div></div>
+            <span id="quickHeading">Favourites For Everyone</span>
+            <div id="dishes">
+                <div id="t"><img src="https://images.pexels.com/photos/3631/summer-dessert-sweet-ice-cream.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"alt="ice cream"title="ICECREAM"/></div>
+                <div id="t"><img src="https://images.pexels.com/photos/827513/pexels-photo-827513.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"alt="cake"title="CAKE"/></div>
+                <div id="t"><IMG src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"alt="salad"title="FRUITSALAD"/></div>
+                <div id="t"><img src="https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"alt="noodles"title="NOODLES"/></div>
+                <div id="t"><img src="https://images.pexels.com/photos/11170284/pexels-photo-11170284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"alt="biryani"title="BIRYANI"/></div>
+                <div id="t"><img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"alt="roti"title="ROTI"/></div>
+                
+                
+            </div>
+        </div>
+        
+        </div>
+        <div id="footer">
+            <hr/>
+            <p id="foottext">&copy;Zomato</p>
+            <hr/>
+            <div class="footDiv">
+                <p>contact us</p>
+                <p>About us</p>
+            </div>
+            <div class="footDiv">
+                <p>contact us</p>
+                <p>About us</p>
+            </div>
+            <div class="footDiv noborder">
+                <p>contact us</p>
+                <p>About us</p>
+            </div>
+        </div>
+        <script>
+            let x=document.getElementById("out");
+            function geolocation() {
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition);//call back function ==>function inside the function
+                }else{
+                    x.innerText="geo not supported";
+                }
+            }function showPosition(data){
+                console.log(data);
+                //x.innerText=`The latitude is${data.coords.latitude} & longitude is ${data.coords.longitude}`
+                let latitude=data.coords.latitude;
+                let longitude=data.coords.longitude;
+                const url =`https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
+                //api calling
+                fetch(url,{method:'GET'})
+                .then((res)=>res.json())
+                .then((data)=>{
+                    let cityName=data.city.name;
+                    let weather=data.list[0].temp.day;
+                    x.innerText=`The city is ${cityName} and weather is ${weather} °C`
+                })
+            }
+        </script>
+    </body>
+</html>
